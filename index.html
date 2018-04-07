@@ -29,7 +29,8 @@
     <div id="gems"></div>
 
     <!-- A button to reset game -->
-    <button id="button" onclick="game.initGame();">Reset Game</button>
+    <!-- a little kludgy here, should have one function call -->
+    <button id="button" onclick="game.resetGame();game.initGame();">Reset Game</button>
     
     <!-- Add JQuery Script -->
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>

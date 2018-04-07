@@ -89,6 +89,7 @@ gems.on("click", ".gem-image", function() {
         // add win
         wins++;
         // reset game
+        // a little kludgy here, should have one function call
         game.resetGame();
         game.initGame();
     }
@@ -98,6 +99,7 @@ gems.on("click", ".gem-image", function() {
         // add loss
         losses++;
         // reset game
+        // a little kludgy here, should have one function call
         game.resetGame();
         game.initGame();
     }
