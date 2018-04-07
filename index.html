@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+
+    <title>Magic Gems</title>
+</head>
+<body>
+    <!-- Display Game Heading -->
+    <h1>The Game of Magic Gems</h1>
+    <p>Click on any of the gems to reach the magic number.  Good Luck!</p>
+    
+    <!-- Display Game Count -->
+    <p id="pWins"></p>
+    <p id="pLosses"></p>
+    <hr>
+    <!-- Display Magic Number -->
+    <h3>Magic Number: <span id="magic-number"></span></h3>
+    <br>
+    <!-- Display Player Number -->
+    <h3>Your Number: <span id="your-number"></span></h3>
+    <br>
+    
+    <!-- Display Gems -->
+    <div id="gems"></div>
+
+    <!-- A button to reset game -->
+    <button id="button" onclick="game.initGame();">Reset Game</button>
+    
+    <!-- Add JQuery Script -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <!-- Start Script -->
+    <script type="text/javascript" src="assets/javascript/gems.js"></script>
+    <!-- Start the Game -->
+    <script type="text/javascript">game.initGame();</script>
+</body>
+</html>
